@@ -1,0 +1,21 @@
+{
+  "name": "svelte-api",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3015",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.0.2",
+    "svelte": "^4.2.12",
+    "tinro": "^0.6.12",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "dayjs": "^1.11.10"
+  }
+}
