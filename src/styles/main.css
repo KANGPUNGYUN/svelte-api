@@ -585,6 +585,11 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.main-logo {
+  width: auto;
+  height: 40px;
+}
+
 /* main-menu */
 
 .main-menu {

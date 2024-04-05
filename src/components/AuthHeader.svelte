@@ -1,11 +1,12 @@
 <script>
     import {router, meta} from 'tinro';
     const route = meta();
+    const goMain = () => router.goto('/articles');
     const url = $route.url
 </script>
 
 <header class="main-header" >
-    <p class="p-main-title" >SLogs</p>
+    <button on:click={goMain}><h1><img class="main-logo" src="public/Logo.png" alt="로고"></h1></button>
     <nav class="main-nav ">
       <a href="/login" class=" main-menu mr-6" class:main-menu-selected={url==='/login'}>로그인</a>
       <a href="/register" class="main-menu mr-6" class:main-menu-selected={url==='/register'}>회원가입</a>

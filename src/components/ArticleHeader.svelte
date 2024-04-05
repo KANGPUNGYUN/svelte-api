@@ -4,6 +4,7 @@
     import {ALL,LIKE, MY} from "../utils/constant"
 
     const goLogin = () => router.goto('/login');
+    const goMain = () => router.goto('/articles');
     const onLogout = () => auth.logout()
 
     const onChangeMode = (mode) => {
@@ -12,7 +13,7 @@
 </script>
 
 <header class="main-header">
-    <p class="p-main-title" >SLogs</p>
+    <button on:click={goMain}><h1><img class="main-logo" src="public/Logo.png" alt="로고" /></h1></button>
     <nav class="main-nav">
         <button class=" main-menu mr-6" class:main-menu-selected={$articlesMode === ALL} on:click={()=>onChangeMode(ALL)}>모두 보기</button>
         {#if $isLogin}
